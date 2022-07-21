@@ -38,10 +38,7 @@ class TrackAndClusterFilterDevice : public o2::framework::Task
 {
  public:
   TrackAndClusterFilterDevice() = default;
-  TrackAndClusterFilterDevice(bool writeMC)
-  {
-    mTrackDump.writeMC = writeMC;
-  };
+  TrackAndClusterFilterDevice(bool writeMC) { mTrackDump.writeMC = writeMC; };
 
   void init(o2::framework::InitContext& ic) final
   {
@@ -82,10 +79,8 @@ class TrackAndClusterFilterDevice : public o2::framework::Task
         }
       }
     }
-    // std::copy_if(tracks.begin(), tracks.end(), std::back_inserter(filteredTracks),
-    //              [this](const auto& track) { return mCuts.goodTrack(track); });
 
-    LOGP(info, "Filtered {} good tracks out of {} total tpc tracks", filteredTracks.size(), tracks.size());
+    LOGP(info, "Filtered {} good tracks with {} MC labels out of {} total tpc tracks", filteredTracks.size(), filteredMCLabels.size(), tracks.size());
 
     mTrackDump.filter(filteredTracks, clustersInputs->clusterIndex, clRefs, filteredMCLabels);
   }
