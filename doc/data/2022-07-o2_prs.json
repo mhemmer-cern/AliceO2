@@ -1,0 +1,4853 @@
+{
+  "repository": {
+    "pullRequests": {
+      "edges": [
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-10T23:13:45Z",
+            "title": "Reduce log spam, use correct CCDB time in FST from DD",
+            "number": 9389,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/MUON/MCH/PreClustering/src/PreClusterFinderSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/workflow/src/ZDCDataReaderDPLSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/start_tmux.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T22:19:28Z",
+            "title": "Optionally prefer ROFs with physics triggers with downscaling ITS reco",
+            "number": 9390,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/ITSMFT/common/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/ITSMFT/common/include/DataFormatsITSMFT/PhysTrigger.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/ITSMFT/common/src/ITSMFTDataFormatsLinkDef.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/reconstruction/include/ITSReconstruction/FastMultEst.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/reconstruction/include/ITSReconstruction/FastMultEstConfig.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/reconstruction/src/FastMultEst.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/include/ITSWorkflow/CookedTrackerSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/include/ITSWorkflow/RecoWorkflow.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/include/ITSWorkflow/TrackerSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/CookedTrackerSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/RecoWorkflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/TrackerSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/its-cluster-reader-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/its-reco-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/MFT/workflow/src/RecoWorkflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/MFT/workflow/src/mft-cluster-reader-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/reconstruction/include/ITSMFTReconstruction/GBTLink.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/reconstruction/include/ITSMFTReconstruction/GBTWord.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/reconstruction/include/ITSMFTReconstruction/RawPixelDecoder.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/reconstruction/src/ITSMFTReconstructionLinkDef.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/workflow/include/ITSMFTWorkflow/ClusterReaderSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/workflow/include/ITSMFTWorkflow/DigitReaderSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/workflow/src/ClusterReaderSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/workflow/src/DigitReaderSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/workflow/src/EntropyDecoderSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/workflow/src/digit-reader-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/workflow/src/trigger-writer-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/dpl-workflow.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-11T23:38:35Z",
+            "title": "Enable configuration of maxTrackletsPerCluster",
+            "number": 9391,
+            "author": {
+              "login": "mconcas"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/Configuration.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/TrackingConfigParam.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/Vertexer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/VertexerTraits.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-12T11:27:29Z",
+            "title": "Event Display: Make separate directories for screenshots per month",
+            "number": 9392,
+            "author": {
+              "login": "pnwkw"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/Screenshot.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "dev: fake ctp readout",
+            "number": 9393,
+            "author": {
+              "login": "lietava"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/CTP/include/DataFormatsCTP/Configuration.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/CTP/src/Configuration.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/AOD/include/AODProducerWorkflow/AODProducerWorkflowSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/AOD/src/AODProducerWorkflowSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "FIT: add DCS workflows for FV0 and FDD",
+            "number": 9394,
+            "author": {
+              "login": "andreasmolander"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/FIT/common/include/DataFormatsFIT/DCSDPValues.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/calibration/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/calibration/include/FDDCalibration/FDDDCSProcessor.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/calibration/macros/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/calibration/macros/makeFDDCCDBEntryForDCS.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/calibration/src/FDDCalibrationLinkDef.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/calibration/src/FDDDCSProcessor.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/calibration/workflow/FDDDCSDataProcessorSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/calibration/workflow/fdd-dcs-data-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/calibration/workflow/fdd-dcs-sim-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/calibration/include/FT0Calibration/FT0DCSProcessor.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/calibration/macros/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/calibration/macros/makeFT0CCDBEntryForDCS.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/calibration/macros/readFT0DCSentries.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/calibration/src/FT0DCSProcessor.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/calibration/testWorkflow/FT0DCSDataProcessorSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/calibration/testWorkflow/ft0-dcs-data-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/calibration/testWorkflow/ft0-dcs-sim-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/calibration/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/calibration/include/FV0Calibration/FV0DCSProcessor.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/calibration/macros/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/calibration/macros/makeFV0CCDBEntryForDCS.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/calibration/src/FV0DCSProcessor.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/calibration/workflow/FV0DCSDataProcessorSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/calibration/workflow/fv0-dcs-data-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/calibration/workflow/fv0-dcs-sim-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/macros/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/macros/readFITDCSentries.C"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T08:13:06Z",
+            "title": "calib fixes",
+            "number": 9395,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/include/Framework/ChannelInfo.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/include/Framework/CommonServices.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/include/Framework/DataProcessingHelpers.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/include/Framework/DataRelayer.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/include/Framework/FairMQDeviceProxy.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/AsyncQueue.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CommonMessageBackends.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CommonServices.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CompletionPolicy.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/DataProcessingDevice.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/DataProcessingHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/DataRelayer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/DecongestionService.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/ExternalFairMQDeviceProxy.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/FairMQDeviceProxy.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/runDataProcessing.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/test/test_AsyncQueue.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/test/test_ExternalFairMQDeviceWorkflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/dpl-workflow.sh"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/workflow-setup.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "its-tracking: put rest of tracking inside traits",
+            "number": 9396,
+            "author": {
+              "login": "mconcas"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/GPU/ITStrackingGPU/TimeFrameGPU.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/GPU/ITStrackingGPU/TrackerTraitsGPU.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/GPU/ITStrackingGPU/VertexerTraitsGPU.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/GPU/cuda/TimeFrameGPU.cu"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/GPU/cuda/TrackerTraitsGPU.cu"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/GPU/cuda/VertexerTraitsGPU.cu"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/Configuration.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/PrimaryVertexContext.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/TimeFrame.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/Tracker.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/TrackerTraits.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/VertexerTraits.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/IOUtils.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/PrimaryVertexContext.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/TimeFrame.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/Tracker.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/TrackerTraits.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/Vertexer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/TrackerSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "macro/run_trac_ca_its.C"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-12T11:27:47Z",
+            "title": "Event Display: Fix ED exporter crash when no tracks are in the current reco container",
+            "number": 9397,
+            "author": {
+              "login": "pnwkw"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "EventVisualisation/Workflow/include/EveWorkflow/EveWorkflowHelper.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Workflow/src/EveWorkflowHelper.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Workflow/src/O2DPLDisplay.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-12T12:31:04Z",
+            "title": "Some MC GRP devs",
+            "number": 9398,
+            "author": {
+              "login": "sawenzel"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Parameters/src/GRPECSObject.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Parameters/src/GRPTool.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-12T22:43:42Z",
+            "title": "o2-eve: online production of screenshots in specified folder (for out…",
+            "number": 9399,
+            "author": {
+              "login": "jmyrcha"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/include/EventVisualisationBase/ConfigurationManager.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/include/EventVisualisationBase/DataSource.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/include/EventVisualisationBase/DataSourceOnline.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/include/EventVisualisationBase/DirectoryLoader.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/src/DirectoryLoader.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/src/FileWatcher.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/include/EventVisualisationView/Options.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/include/EventVisualisationView/Screenshot.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/EventManagerFrame.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/Options.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/Screenshot.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Workflow/src/FileProducer.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-12T22:29:16Z",
+            "title": "TPC: add trigger handling in ILBZS",
+            "number": 9400,
+            "author": {
+              "login": "wiechula"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/TPC/include/DataFormatsTPC/ZeroSuppressionLinkBased.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/reconstruction/src/RawProcessingHelpers.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-12T14:25:27Z",
+            "title": "FST: Fix return value with WORKFLOWMODE=print",
+            "number": 9401,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/aggregator-workflow.sh"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/dpl-workflow.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-12T22:46:05Z",
+            "title": "TRD permit eventype to change between rdh stops, reduce errorneous errors, and reduce some alarms to info messages.",
+            "number": 9402,
+            "author": {
+              "login": "bazinski"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/include/TRDReconstruction/CruRawReader.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/src/CruRawReader.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/src/TrackletsParser.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "ZDC TDC calibration",
+            "number": 9403,
+            "author": {
+              "login": "lucaquaglia15"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/base/include/ZDCBase/Constants.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/include/ZDCCalib/TDCCalib.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/include/ZDCCalib/TDCCalibConfig.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/include/ZDCCalib/TDCCalibData.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/include/ZDCCalib/TDCCalibEPN.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/include/ZDCCalib/TDCCalibEPNSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/include/ZDCCalib/TDCCalibSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/src/TDCCalib.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/src/TDCCalibConfig.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/src/TDCCalibData.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/src/TDCCalibEPN.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/src/TDCCalibEPNSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/src/TDCCalibSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/src/ZDCCalibLinkDef.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/src/zdc-tdccalib-epn-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/src/zdc-tdccalib-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/macro/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/macro/CreateTDCCalib.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/macro/CreateTDCCalibConfig.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/macro/InspectCCDBFile.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/reconstruction/include/ZDCReconstruction/ZDCTDCParam.h"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "Adding debug streamer for reconstruction",
+            "number": 9404,
+            "author": {
+              "login": "matthias-kleiner"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/DataTypes/DebugStreamer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/DataTypes/DebugStreamer.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/GPUTrackingLinkDef_O2_DataTypes.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/dEdx/GPUdEdx.h"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-12T22:21:31Z",
+            "title": "Make GRPECS query run-dependent in GRPGeomHelper",
+            "number": 9405,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/Base/src/GRPGeomHelper.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/GRP/workflows/src/create-grp-ecs.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "major revision: updated FT0 frame geometry for both A and C side",
+            "number": 9406,
+            "author": {
+              "login": "dedx"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/base/src/Geometry.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/simulation/include/FT0Simulation/Detector.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/simulation/src/Detector.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-12T21:58:46Z",
+            "title": "GPU: some unrelated fixes",
+            "number": 9407,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/Base/GPUReconstruction.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/DataTypes/CalibdEdxTrackTopologyPol.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/DataTypes/CalibdEdxTrackTopologySpline.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/Global/GPUChainTrackingClusterizer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/Standalone/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/display/GPUDisplayBackendOpenGLMagneticField.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/display/GPUDisplayMagneticField.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/display/GPUDisplayMagneticField.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/TPCFastTransformation/MultivariatePolynomial.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/Workflow/src/GPUWorkflowSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-13T12:46:40Z",
+            "title": "DPL options parsing: allow multiple options `--batch`",
+            "number": 9408,
+            "author": {
+              "login": "matthiasrichter"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/src/runDataProcessing.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-12T22:01:55Z",
+            "title": "GPU: Fix ZS decoding when incoming pages are not ordered monitonically in first time bin",
+            "number": 9409,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/Global/GPUChainTrackingClusterizer.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-14T01:08:19Z",
+            "title": "Event Display: Make the view camera positions and visibility settings persistent",
+            "number": 9410,
+            "author": {
+              "login": "pnwkw"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/include/EventVisualisationView/EventManager.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/EventManager.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "CLOSED",
+            "mergedAt": null,
+            "title": "Service work",
+            "number": 9411,
+            "author": {
+              "login": "AlexBigO"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_4.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_5.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_5.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_6.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_6.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_7.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_7.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_8.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_8.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_9.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_9.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_0.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_0.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_1.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_1.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_10.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_10.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_11.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_11.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_12.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_12.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_13.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_2.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_2.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_3.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_3.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_4.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_4.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_5.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_5.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_6.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_6.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_7.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_7.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_8.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_8.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_9.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_9.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_0.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_0.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_1.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_1.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_10.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_10.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_11.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_11.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_12.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_12.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_13.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_2.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_2.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_3.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_3.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_4.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_4.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_5.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_5.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_6.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_6.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_7.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_7.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_8.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_8.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_9.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_9.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_0.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_0.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_1.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_1.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_10.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_10.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_11.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_11.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_12.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_12.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_13.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_2.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_2.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_3.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_3.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_4.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_4.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_5.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_5.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_6.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_6.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_7.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_7.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_8.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_8.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_9.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_9.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/grid_list.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/grid_list_x.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/grid_list_y.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/simulation/include/ITSMFTSimulation/DPLDigitizerParam.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/simulation/include/ITSMFTSimulation/DigiParams.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/simulation/src/AlpideSimResponse.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/simulation/src/Digitizer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Steer/DigitizerWorkflow/src/ITSMFTDigitizerSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-14T01:09:14Z",
+            "title": "o2-eve: fix problems with event navigation",
+            "number": 9412,
+            "author": {
+              "login": "jmyrcha"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/src/DirectoryLoader.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Workflow/include/EveWorkflow/FileProducer.h"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-14T01:08:53Z",
+            "title": "o2-eve, o2-eve-export-workflow: fix option for not deleting a files, …",
+            "number": 9413,
+            "author": {
+              "login": "jmyrcha"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/src/DirectoryLoader.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/include/EventVisualisationView/EventManagerFrame.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/EventManagerFrame.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T10:00:23Z",
+            "title": "[EMCAL-630, EMCAL-789] EMCAL Reco Params and LGnoHG suppression ",
+            "number": 9414,
+            "author": {
+              "login": "mfasDa"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/reconstruction/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/reconstruction/include/EMCALReconstruction/RecoParam.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/reconstruction/src/EMCALReconstructionLinkDef.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/reconstruction/src/RecoParam.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/workflow/src/CellConverterSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/workflow/src/RawToCellConverterSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "Service work",
+            "number": 9415,
+            "author": {
+              "login": "AlexBigO"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_4.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_5.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_5.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_6.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_6.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_7.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_7.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_8.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_8.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_9.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.00_9.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_0.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_0.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_1.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_1.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_10.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_10.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_11.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_11.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_12.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_12.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_13.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_2.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_2.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_3.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_3.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_4.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_4.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_5.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_5.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_6.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_6.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_7.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_7.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_8.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_8.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_9.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_8.50_9.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_0.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_0.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_1.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_1.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_10.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_10.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_11.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_11.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_12.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_12.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_13.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_2.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_2.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_3.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_3.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_4.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_4.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_5.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_5.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_6.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_6.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_7.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_7.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_8.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_8.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_9.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.00_9.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_0.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_0.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_1.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_1.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_10.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_10.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_11.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_11.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_12.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_12.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_13.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_2.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_2.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_3.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_3.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_4.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_4.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_5.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_5.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_6.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_6.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_7.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_7.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_8.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_8.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_9.00.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/data_pixels_9.50_9.50.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/grid_list.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/grid_list_x.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/data/alpideResponseData/Vbb-0.0V/grid_list_y.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/simulation/include/ITSMFTSimulation/DPLDigitizerParam.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/simulation/include/ITSMFTSimulation/DigiParams.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/simulation/src/AlpideSimResponse.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/simulation/src/Digitizer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Steer/DigitizerWorkflow/src/ITSMFTDigitizerSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T07:42:49Z",
+            "title": "o2-eve: sum-up calorimeter energy over displayed time period",
+            "number": 9416,
+            "author": {
+              "login": "jmyrcha"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/EventManager.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-13T15:11:46Z",
+            "title": "Add new RunTypes to GRPECSObject",
+            "number": 9417,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Parameters/include/DataFormatsParameters/GRPECSObject.h"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-14T10:27:18Z",
+            "title": "Units conversions in ZDC",
+            "number": 9418,
+            "author": {
+              "login": "majerzemilia"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/simulation/src/Detector.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "Using full MCH covariance matrix for seeding of the matching Kalman filter",
+            "number": 9419,
+            "author": {
+              "login": "mcoquet642"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTracking/src/MatchGlobalFwd.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T09:19:54Z",
+            "title": "Fix potential bug in the afterburner",
+            "number": 9420,
+            "author": {
+              "login": "fmazzasc"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTracking/src/MatchTPCITS.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T08:58:07Z",
+            "title": "Bugfix clear TRD pileup signals after flushing digits",
+            "number": 9421,
+            "author": {
+              "login": "martenole"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/TRD/simulation/include/TRDSimulation/Digitizer.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/workflow/src/TRDDigitizerSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T16:37:59Z",
+            "title": "TRD updates",
+            "number": 9422,
+            "author": {
+              "login": "martenole"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/TRD/include/DataFormatsTRD/RawData.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/TRD/src/DataFormatsTRDLinkDef.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/TRD/src/LinkRecord.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/TRD/src/RawData.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/base/test/testRawData.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/macros/CompareDigitsAndTracklets.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/simulation/include/TRDSimulation/Trap2CRU.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/simulation/src/Trap2CRU.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/simulation/src/trap2raw.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/workflow/src/TRDGlobalTrackingQCSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T08:51:05Z",
+            "title": "TRD fix distance calculation",
+            "number": 9423,
+            "author": {
+              "login": "bazinski"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/src/CruRawReader.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-14T21:43:07Z",
+            "title": "GPU: Fixes for processing corrupt TPC raw data",
+            "number": 9424,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/Global/GPUChainTrackingClusterizer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/TPCClusterFinder/GPUTPCCFChainContext.h"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T11:48:56Z",
+            "title": "CPV always request trigOffset CCDB input",
+            "number": 9425,
+            "author": {
+              "login": "martenole"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/CPV/workflow/src/RawToDigitConverterSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "CLOSED",
+            "mergedAt": null,
+            "title": "CPV: fix triggeroffset in RawToDigitConverterSpec",
+            "number": 9426,
+            "author": {
+              "login": "sevdokim"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/CPV/workflow/src/RawToDigitConverterSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T21:57:27Z",
+            "title": " [EMCAL-790] Fix correction of the cell time for BC mod 4",
+            "number": 9427,
+            "author": {
+              "login": "mfasDa"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/reconstruction/include/EMCALReconstruction/RecoParam.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/reconstruction/src/RecoParam.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/workflow/src/RawToCellConverterSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-19T16:43:30Z",
+            "title": "ZDC Fix baseline estimation, insert protection for duplicated channels, dLoss bit, fix null payload protection",
+            "number": 9428,
+            "author": {
+              "login": "cortesep"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/ZDC/include/DataFormatsZDC/OrbitData.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/ZDC/include/DataFormatsZDC/RawEventData.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/ZDC/src/RawEventData.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/base/include/ZDCBase/ModuleConfig.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/base/src/ModuleConfig.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/calib/src/BaselineCalibEPN.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/macro/CreateModuleConfig.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/macro/InspectCCDBFile.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/raw/src/DumpRaw.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/raw/src/RawReaderZDC.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/raw/src/raw-parser.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/reconstruction/include/ZDCReconstruction/DigiReco.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/reconstruction/src/DigiReco.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/reconstruction/src/DigiRecoTest.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/simulation/include/ZDCSimulation/DigitizerTest.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/simulation/include/ZDCSimulation/Digits2Raw.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/simulation/src/Digitizer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/simulation/src/DigitizerTest.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/simulation/src/Digits2Raw.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/workflow/src/DigitRecoSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/workflow/src/ZDCDataReaderDPLSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "ITS DCS parser for CCDB",
+            "number": 9429,
+            "author": {
+              "login": "ezradlesser"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/include/ITSWorkflow/DCSParserSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/include/ITSWorkflow/DCSParserWorkflow.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/DCSParserSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/DCSParserWorkflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/its-dcs-parser-workflow.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T11:58:22Z",
+            "title": "Reduce some severities",
+            "number": 9430,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/MUON/MCH/Tracking/src/TrackFinder.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/include/TRDReconstruction/CTFCoder.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "GPU/GPUTracking/Global/GPUChainTrackingClusterizer.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T18:04:23Z",
+            "title": "ZDC: pimpl and fwd declare for fast sim",
+            "number": 9431,
+            "author": {
+              "login": "sawenzel"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/simulation/include/ZDCSimulation/Detector.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/simulation/src/Detector.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T07:42:31Z",
+            "title": "Add muon matches support to ED workflow",
+            "number": 9432,
+            "author": {
+              "login": "pnwkw"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/include/EventVisualisationBase/ConfigurationManager.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Workflow/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Workflow/include/EveWorkflow/EveWorkflowHelper.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Workflow/include/EveWorkflow/O2DPLDisplay.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Workflow/src/AO2DConverter.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Workflow/src/EveWorkflowHelper.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-15T14:50:43Z",
+            "title": "Fix: reference invalidated by vector expansion was used",
+            "number": 9433,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTracking/src/MatchTPCITS.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T09:32:43Z",
+            "title": "Fixes for globalfwd matches in reco and readed.",
+            "number": 9434,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTrackingWorkflow/helpers/src/InputHelper.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/dpl-workflow.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "Add additional TimeFrame dump for debug",
+            "number": 9435,
+            "author": {
+              "login": "mpuccio"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/macros/test/CheckTracksCA.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/TimeFrame.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/TrackingConfigParam.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/TimeFrame.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/Tracker.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/TrackerSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T07:40:20Z",
+            "title": "Limit error messages from DPLRawParser",
+            "number": 9436,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Common/Utils/include/CommonUtils/VerbosityConfig.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/common/reconstruction/src/RawPixelDecoder.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Utils/include/DPLUtils/DPLRawParser.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/dpl-workflow.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-17T20:53:47Z",
+            "title": "MFT: avoid error when trying to initialize MCReader twice",
+            "number": 9437,
+            "author": {
+              "login": "sawenzel"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/MFT/assessment/include/MFTAssessment/MFTAssessment.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/MFT/assessment/src/MFTAssessment.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T07:38:27Z",
+            "title": "TRD final fix for pileup in digitization?",
+            "number": 9438,
+            "author": {
+              "login": "martenole"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/TRD/simulation/include/TRDSimulation/Digitizer.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/workflow/src/TRDDigitizerSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T07:37:57Z",
+            "title": "TRD dump halfcru data blocks with bc < LM_L0",
+            "number": 9439,
+            "author": {
+              "login": "bazinski"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/TRD/include/DataFormatsTRD/RawDataStats.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/include/TRDReconstruction/CruRawReader.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/src/CruRawReader.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T09:31:55Z",
+            "title": "TPC residual aggregator autosave",
+            "number": 9440,
+            "author": {
+              "login": "martenole"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTrackingWorkflow/tpcinterpolationworkflow/include/TPCInterpolationWorkflow/TPCResidualAggregatorSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/SpacePoints/include/SpacePoints/ResidualAggregator.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/SpacePoints/src/ResidualAggregator.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/aggregator-workflow.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-17T14:18:42Z",
+            "title": "Fixes for tof-calibinfo-reader, more robust TimeSlice methods",
+            "number": 9441,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/Calibration/include/DetectorsCalibration/TimeSlotCalibration.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTrackingWorkflow/tofworkflow/src/tof-calibinfo-reader.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/Raw/include/DetectorsRaw/HBFUtilsInitializer.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/Raw/src/HBFUtilsInitializer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TOF/workflowIO/src/CalibInfoReaderSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T02:00:28Z",
+            "title": "Fix PVertexer: wrong protection against empty bunchfilling",
+            "number": 9442,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/Vertexing/src/PVertexer.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T13:50:30Z",
+            "title": "DPL: allow overriding orbit reset time",
+            "number": 9443,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/include/Framework/DataTakingContext.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CCDBHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CommonServices.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/ExternalFairMQDeviceProxy.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/LifetimeHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/start_tmux.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T13:25:07Z",
+            "title": "disable sec.vtx. is AOD producer if sec.vertexer is not running",
+            "number": 9444,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/dpl-workflow.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T13:48:51Z",
+            "title": "DPL: improve documentation",
+            "number": 9445,
+            "author": {
+              "login": "ktf"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CommonMessageBackends.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T13:50:05Z",
+            "title": "Fix output proxy",
+            "number": 9446,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/src/CruRawReader.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/ExternalFairMQDeviceProxy.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/start_tmux.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T14:41:30Z",
+            "title": "TRD fix units and boolean logic",
+            "number": 9447,
+            "author": {
+              "login": "bazinski"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/TRD/src/RawData.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/src/CruRawReader.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T23:07:07Z",
+            "title": "Speedup",
+            "number": 9448,
+            "author": {
+              "login": "ktf"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/src/WorkflowHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/WorkflowHelpers.h"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T17:27:05Z",
+            "title": "Fix typo",
+            "number": 9449,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/src/ExternalFairMQDeviceProxy.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T18:46:09Z",
+            "title": "Update configurables from key-value pairs",
+            "number": 9450,
+            "author": {
+              "login": "qgp"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/TPC/workflow/src/tpc-calibrator-gainmap-tracks.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/workflow/src/tpc-integrate-idc.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/aggregator-workflow.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T21:15:47Z",
+            "title": "Fit failures should be warning not error",
+            "number": 9451,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Common/Utils/include/CommonUtils/BoostHistogramUtils.h"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "Add FIT,EMC,PHS,CPV to Vertex-Track matching + related fixes",
+            "number": 9452,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/CPV/include/DataFormatsCPV/Cluster.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Reconstruction/include/ReconstructionDataFormats/GlobalTrackID.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/common/include/CommonDataFormat/InteractionRecord.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/AOD/src/AODProducerWorkflowSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/CPV/workflow/src/ReaderSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTracking/src/MatchTPCITS.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTrackingWorkflow/helpers/src/InputHelper.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTrackingWorkflow/src/VertexTrackMatcherSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTrackingWorkflow/src/primary-vertexing-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/Vertexing/include/DetectorsVertexing/VertexTrackMatcher.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/Vertexing/src/VertexTrackMatcher.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "prodtests/sim_challenge.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-16T23:08:04Z",
+            "title": "Fix codechecker violation",
+            "number": 9453,
+            "author": {
+              "login": "davidrohr"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/src/ExternalFairMQDeviceProxy.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-18T13:02:19Z",
+            "title": "DPL: check precondition only once",
+            "number": 9454,
+            "author": {
+              "login": "ktf"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/src/DeviceSpecHelpers.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-17T23:15:10Z",
+            "title": "raw-file-reader checks for ini file at keyval.input_dir",
+            "number": 9455,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Common/Utils/include/CommonUtils/ConfigurableParam.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Common/Utils/src/ConfigurableParam.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/Raw/src/HBFUtilsInitializer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/Raw/src/rawfile-reader-workflow.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-17T20:53:36Z",
+            "title": "Possibility to set condition query rate via DPL_CONDITION_QUERY_RATE",
+            "number": 9456,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/src/WorkflowHelpers.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-19T00:49:24Z",
+            "title": "Read SimParams from CCDB; clear CluElements; ",
+            "number": 9457,
+            "author": {
+              "login": "peressounko"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/base/include/PHOSBase/PHOSSimParams.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/calib/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/calib/src/recalibrator.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/reconstruction/src/CaloRawFitterGS.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/reconstruction/src/Clusterer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/workflow/include/PHOSWorkflow/CellConverterSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/workflow/include/PHOSWorkflow/ClusterizerSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/workflow/include/PHOSWorkflow/RawToCellConverterSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/workflow/src/CellConverterSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/workflow/src/ClusterizerSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/PHOS/workflow/src/RawToCellConverterSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Steer/DigitizerWorkflow/src/PHOSDigitizerSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Steer/DigitizerWorkflow/src/PHOSDigitizerSpec.h"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-18T12:01:00Z",
+            "title": "Possibility to set query rate per ccdbParamSpec",
+            "number": 9458,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/Base/src/GRPGeomHelper.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/include/Framework/CCDBParamSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CCDBHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CCDBParamSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-19T09:00:41Z",
+            "title": "DPL: use 15s as metric interval",
+            "number": 9459,
+            "author": {
+              "login": "ktf"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CommonServices.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "CLOSED",
+            "mergedAt": null,
+            "title": "Avoid empty aggregator workflows",
+            "number": 9460,
+            "author": {
+              "login": "martenole"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/aggregator-workflow.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "Fix TPC to ITS propagation + add extra Z tolerance",
+            "number": 9461,
+            "author": {
+              "login": "fmazzasc"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/Vertexing/include/DetectorsVertexing/SVertexer.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/Vertexing/include/DetectorsVertexing/SVertexerParams.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/Vertexing/src/SVertexer.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "tracklets ITS",
+            "number": 9462,
+            "author": {
+              "login": "mpuccio"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/macros/test/CheckTracksCA.C"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/Configuration.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/TimeFrame.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/Tracker.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/include/ITStracking/TrackingConfigParam.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/TimeFrame.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/tracking/src/Tracker.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/workflow/src/TrackerSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-20T07:58:06Z",
+            "title": "o2-eve: fix memory leak in screenshots",
+            "number": 9463,
+            "author": {
+              "login": "jmyrcha"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/include/EventVisualisationBase/ConfigurationManager.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/include/EventVisualisationBase/DirectoryLoader.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/Base/src/DirectoryLoader.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/include/EventVisualisationView/EventManagerFrame.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/EventManagerFrame.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/Screenshot.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "MC: add special particles",
+            "number": 9464,
+            "author": {
+              "login": "sawenzel"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Steer/src/O2MCApplication.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "N dimensional local regression for O2",
+            "number": 9465,
+            "author": {
+              "login": "gbiro"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Common/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Common/NDRegression/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Common/NDRegression/include/NDRegression/NDRegression.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Common/NDRegression/src/NDRegression.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Common/NDRegression/src/NDRegressionLinkDef.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Common/NDRegression/test/NDRegression2DGaus.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Common/NDRegression/test/NDRegression2DIdeal.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-18T12:34:34Z",
+            "title": "Fix HBFUtilsInitializer usage in TRD TrackletTransformer and TrapSimulator",
+            "number": 9466,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/TRD/workflow/src/TRDTrackletTransformerWorkflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/workflow/src/TRDTrapSimulatorWorkFlow.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-18T13:50:22Z",
+            "title": "Fix scalers' initializations",
+            "number": 9467,
+            "author": {
+              "login": "majerzemilia"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ZDC/simulation/src/Detector.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-19T08:36:46Z",
+            "title": "Don't add CCDB populator to empty aggregator workflow",
+            "number": 9468,
+            "author": {
+              "login": "martenole"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "prodtests/full-system-test/aggregator-workflow.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-20T14:00:32Z",
+            "title": "Define CTF metadata file data type depending on the runType",
+            "number": 9469,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/Common/include/DetectorsCommonDataFormats/FileMetaData.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Parameters/include/DataFormatsParameters/GRPECSObject.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Parameters/src/GRPECSObject.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/CTF/workflow/src/CTFWriterSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/include/Framework/DataTakingContext.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CommonServices.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-19T08:31:38Z",
+            "title": "DPL Analysis: add simple testcase for ARRAY_INDEX",
+            "number": 9470,
+            "author": {
+              "login": "ktf"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/test/test_ASoA.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-18T21:55:31Z",
+            "title": "Fix: no need to load old GRP from file",
+            "number": 9471,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "GPU/Workflow/src/GPUWorkflowSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "CLOSED",
+            "mergedAt": null,
+            "title": "Tentative fix for fetching OrbitReset object",
+            "number": 9472,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CCDBHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CommonServices.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "[EMCAL-551][WIP] improvement of emcal cell energy compression",
+            "number": 9473,
+            "author": {
+              "login": "fjonasALICE"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/EMCAL/include/DataFormatsEMCAL/Constants.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/EMCAL/src/Cell.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/reconstruction/src/CaloRawFitterGamma2.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/reconstruction/src/CaloRawFitterStandard.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/workflow/src/CellConverterSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/workflow/src/RawToCellConverterSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-20T10:00:31Z",
+            "title": "add tfidinfo in tof calibinfo",
+            "number": 9474,
+            "author": {
+              "login": "noferini"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/TOF/include/DataFormatsTOF/Diagnostic.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TOF/workflow/src/CompressedDecodingTask.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TOF/workflow/src/EntropyDecoderSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TOF/workflowIO/src/CalibInfoReaderSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "DPL Analysis: improve the error message when a known wagon is missing.",
+            "number": 9475,
+            "author": {
+              "login": "ktf"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/src/DataInputDirector.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-20T07:57:40Z",
+            "title": "Add drawing of SACs per stack",
+            "number": 9476,
+            "author": {
+              "login": "matthias-kleiner"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/TPC/base/include/TPCBase/Painter.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/base/src/Painter.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/include/TPCCalibration/IDCContainer.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/include/TPCCalibration/IDCDrawHelper.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/include/TPCCalibration/SACDrawHelper.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/include/TPCCalibration/SACFactorization.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/src/IDCDrawHelper.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/src/SACDrawHelper.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/src/SACFactorization.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-19T22:13:44Z",
+            "title": "Cleanup of orbitReset extraction",
+            "number": 9477,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/include/Framework/DataTakingContext.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CCDBHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CommonServices.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-21T08:28:13Z",
+            "title": "Implementation of End Cap element of the Cage",
+            "number": 9478,
+            "author": {
+              "login": "mario6829"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/simulation/include/ITSSimulation/V3Cage.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/ITS/simulation/src/V3Cage.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-19T21:55:19Z",
+            "title": "DPL: add instructions for the remote GUI",
+            "number": 9479,
+            "author": {
+              "login": "ktf"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Framework/Core/COOKBOOK.md"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "FIT: Add DCS configuration workflows",
+            "number": 9480,
+            "author": {
+              "login": "andreasmolander"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "DataFormats/Detectors/FIT/common/include/DataFormatsFIT/BadChannelMap.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/dcsmonitoring/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/dcsmonitoring/workflow/FDDDCSConfigProcessorSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FDD/dcsmonitoring/workflow/fdd-dcs-config-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/dcsmonitoring/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/dcsmonitoring/include/FT0DCSMonitoring/FT0DCSConfigReader.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/dcsmonitoring/src/FT0DCSMonitoringLinkDef.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/dcsmonitoring/workflow/FT0DCSConfigProcessorSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FT0/dcsmonitoring/workflow/ft0-dcs-config-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/dcsmonitoring/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/dcsmonitoring/workflow/FV0DCSConfigProcessorSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/FV0/dcsmonitoring/workflow/fv0-dcs-config-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/common/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/common/dcsmonitoring/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/common/dcsmonitoring/include/FITDCSMonitoring/FITDCSConfigProcessorSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/common/dcsmonitoring/include/FITDCSMonitoring/FITDCSConfigReader.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/common/dcsmonitoring/src/FITDCSConfigReader.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/common/dcsmonitoring/src/FITDCSMonitoringLinkDef.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/macros/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/FIT/macros/readFITBadChannelMap.C"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "TRD fix error message to only have information that is certain to be there.",
+            "number": 9481,
+            "author": {
+              "login": "bazinski"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/include/TRDReconstruction/CruRawReader.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/src/CruRawReader.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TRD/reconstruction/src/DataReaderTask.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "TPC SCD calib update",
+            "number": 9482,
+            "author": {
+              "login": "martenole"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTrackingWorkflow/tpcinterpolationworkflow/include/TPCInterpolationWorkflow/TPCResidualAggregatorSpec.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTrackingWorkflow/tpcinterpolationworkflow/src/TPCInterpolationSpec.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/GlobalTrackingWorkflow/tpcinterpolationworkflow/src/tpc-residual-aggregator.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/SpacePoints/include/SpacePoints/ResidualAggregator.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/SpacePoints/include/SpacePoints/TrackResiduals.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/calibration/SpacePoints/src/ResidualAggregator.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-20T18:36:03Z",
+            "title": "Fix TF throttling for GRID jobs",
+            "number": 9483,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/CTF/workflow/src/ctf-reader-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/Raw/TFReaderDD/src/tf-reader-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/Raw/src/rawfile-reader-workflow.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/include/Framework/ChannelSpecHelpers.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/ChannelSpecHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/CommonDataProcessors.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/DDSConfigHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/DeviceSpecHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/src/O2ControlHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/test/test_ChannelSpecHelpers.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Framework/Core/test/test_DeviceSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-20T18:36:33Z",
+            "title": "macro/snippet to get timestamp from run and orbit",
+            "number": 9484,
+            "author": {
+              "login": "shahor02"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "macro/CMakeLists.txt"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "macro/getTimeStamp.C"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "MERGED",
+            "mergedAt": "2022-07-21T08:25:26Z",
+            "title": "SpaceCharge: Optimising simulation of charge up of GEM frame",
+            "number": 9485,
+            "author": {
+              "login": "matthias-kleiner"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/TPC/spacecharge/include/TPCSpaceCharge/PoissonSolver.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/spacecharge/include/TPCSpaceCharge/SpaceCharge.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/spacecharge/include/TPCSpaceCharge/TriCubic.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/spacecharge/src/PoissonSolver.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/spacecharge/src/SpaceCharge.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/spacecharge/src/TriCubic.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/TPC/spacecharge/test/testO2TPCPoissonSolver.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "Event Display: Added run type switching",
+            "number": 9486,
+            "author": {
+              "login": "mchwes"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "EventVisualisation/Scripts/.o2eve_config"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/include/EventVisualisationView/EventManagerFrame.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/EventManagerFrame.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/Initializer.cxx"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "EventVisualisation/View/src/Options.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "Modified MFT DCS config util codes",
+            "number": 9487,
+            "author": {
+              "login": "syano0822"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/MFT/condition/include/MFTCondition/DCSConfigUtils.h"
+                  }
+                },
+                {
+                  "node": {
+                    "path": "Detectors/ITSMFT/MFT/condition/macros/readMFTDCSConfigEntries.C"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "state": "OPEN",
+            "mergedAt": null,
+            "title": "[EMCAL-630] Set log severity to warning in RawToCellConverter",
+            "number": 9488,
+            "author": {
+              "login": "mfasDa"
+            },
+            "files": {
+              "edges": [
+                {
+                  "node": {
+                    "path": "Detectors/EMCAL/workflow/src/RawToCellConverterSpec.cxx"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
