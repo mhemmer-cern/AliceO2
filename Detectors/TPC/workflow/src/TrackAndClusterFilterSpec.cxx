@@ -38,6 +38,10 @@ class TrackAndClusterFilterDevice : public o2::framework::Task
 {
  public:
   TrackAndClusterFilterDevice() = default;
+  TrackAndClusterFilterDevice(bool writeMC)
+  {
+    mTrackDump.writeMC = writeMC;
+  };
 
   void init(o2::framework::InitContext& ic) final
   {
@@ -65,15 +69,25 @@ class TrackAndClusterFilterDevice : public o2::framework::Task
     // }
     const auto tracks = pc.inputs().get<gsl::span<o2::tpc::TrackTPC>>("trackTPC");
     const auto clRefs = pc.inputs().get<gsl::span<o2::tpc::TPCClRefElem>>("trackTPCClRefs");
+    const auto mcLabel = (mTrackDump.writeMC) ? pc.inputs().get<gsl::span<o2::MCCompLabel>>("trackTPCMCTruth") : gsl::span<o2::MCCompLabel>();
     const auto& clustersInputs = getWorkflowTPCInput(pc);
 
     std::vector<TrackTPC> filteredTracks;
-    std::copy_if(tracks.begin(), tracks.end(), std::back_inserter(filteredTracks),
-                 [this](const auto& track) { return mCuts.goodTrack(track); });
+    std::vector<o2::MCCompLabel> filteredMCLabels;
+    for (size_t iTrack = 0; iTrack < tracks.size(); iTrack++) {
+      if (mCuts.goodTrack(tracks[iTrack])) {
+        filteredTracks.emplace_back(tracks[iTrack]);
+        if (mTrackDump.writeMC) {
+          filteredMCLabels.emplace_back(mcLabel[iTrack]);
+        }
+      }
+    }
+    // std::copy_if(tracks.begin(), tracks.end(), std::back_inserter(filteredTracks),
+    //              [this](const auto& track) { return mCuts.goodTrack(track); });
 
     LOGP(info, "Filtered {} good tracks out of {} total tpc tracks", filteredTracks.size(), tracks.size());
 
-    mTrackDump.filter(tracks, clustersInputs->clusterIndex, clRefs);
+    mTrackDump.filter(filteredTracks, clustersInputs->clusterIndex, clRefs, filteredMCLabels);
   }
 
   void endOfStream(o2::framework::EndOfStreamContext& /*ec*/) final
@@ -91,7 +105,7 @@ class TrackAndClusterFilterDevice : public o2::framework::Task
   TrackCuts mCuts{};
 };
 
-DataProcessorSpec getTrackAndClusterFilterSpec(const std::string dataDescriptionStr)
+DataProcessorSpec getTrackAndClusterFilterSpec(const std::string dataDescriptionStr, const bool writeMC)
 {
   std::vector<InputSpec> inputs;
   std::vector<OutputSpec> outputs;
@@ -105,12 +119,15 @@ DataProcessorSpec getTrackAndClusterFilterSpec(const std::string dataDescription
   inputs.emplace_back("trackTPC", "TPC", dataDescription, 0, Lifetime::Timeframe);
   inputs.emplace_back("trackTPCClRefs", "TPC", "CLUSREFS", 0, Lifetime::Timeframe);
   inputs.emplace_back("clusTPC", ConcreteDataTypeMatcher{"TPC", "CLUSTERNATIVE"}, Lifetime::Timeframe);
+  if (writeMC) {
+    inputs.emplace_back("trackTPCMCTruth", "TPC", "TRACKSMCLBL", 0, Lifetime::Timeframe);
+  }
 
   return DataProcessorSpec{
     "tpc-track-and-cluster-filter",
     inputs,
     outputs,
-    AlgorithmSpec{adaptFromTask<TrackAndClusterFilterDevice>()},
+    AlgorithmSpec{adaptFromTask<TrackAndClusterFilterDevice>(writeMC)},
     Options{
       {"output-file", VariantType::String, "filtered-track-and-clusters.root", {"output file name"}},
       {"write-tracks", VariantType::Bool, true, {"dump filtered tracks and clusters"}},
