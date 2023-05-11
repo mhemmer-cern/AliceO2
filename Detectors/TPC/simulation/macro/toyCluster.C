@@ -139,13 +139,13 @@ void fillTPCHits(const float theta, const float phi, const float dedx, std::vect
   static TF1 fz("fz", "tanh(x/60 - 3.5) * 0.6  + 1.6", minZ, detParam.TPClength);
   const float zCoordinate = fz.GetRandom(); // draw z position
 
-  const float flightTime = 0;                                                     // flight time of the particle. This value is not needed and set therefor to 0.
-  const float radiusStart = mapper.getPadRegionInfo(ireg).getRadiusFirstRow();    // region start
+  const float flightTime = 0;                                                  // flight time of the particle. This value is not needed and set therefor to 0.
+  const float radiusStart = mapper.getPadRegionInfo(ireg).getRadiusFirstRow(); // region start
   const auto padLength = mapper.getPadRegionInfo(ireg).getPadHeight();
   const float radius = radiusStart + Mapper::ROWSPERREGION[ireg] / 2 * padLength; // start in the center of the region
   HitGroup hitGroup{};                                                            // create HitGroup and push_back to TPCHitsShiftedSector
   const float radiusEnd = radiusStart + Mapper::ROWSPERREGION[ireg] * padLength;
-  HitGroup hitGroup{};                                                            // create HitGroup and push_back to TPCHitsShiftedSector
+  HitGroup hitGroup{}; // create HitGroup and push_back to TPCHitsShiftedSector
   const float radiusEnd = 260;
 
   // first point of the track
