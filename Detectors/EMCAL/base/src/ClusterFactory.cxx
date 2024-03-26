@@ -89,16 +89,17 @@ o2::emcal::AnalysisCluster ClusterFactory<InputType>::buildCluster(int clusterIn
 
   std::vector<unsigned short> cellsIdices;
 
-  size_t iCell = 0;
   bool addClusterLabels = ((clusterLabel != nullptr) && (mCellLabelContainer.size() > 0));
   for (auto cellIndex : inputsIndices) {
     cellsIdices.push_back(cellIndex);
     if (addClusterLabels) {
-      for (size_t iLabel = 0; iLabel < mCellLabelContainer[iCell].GetLabelSize(); iLabel++) {
-        clusterLabel->addValue(mCellLabelContainer[iCell].GetLabel(iLabel),
-                               mCellLabelContainer[iCell].GetAmplitudeFraction(iLabel) * mInputsContainer[iCell].getEnergy());
+      for (size_t iLabel = 0; iLabel < mCellLabelContainer[cellIndex].GetLabelSize(); iLabel++) {
+        if (mCellLabelContainer[cellIndex].GetAmplitudeFraction(iLabel) <= 0.f) {
+          continue; // skip 0 entries
+        }
+        clusterLabel->addValue(mCellLabelContainer[cellIndex].GetLabel(iLabel),
+                               mCellLabelContainer[cellIndex].GetAmplitudeFraction(iLabel) * mInputsContainer[cellIndex].getEnergy());
       }
-      iCell++;
     }
   }
   if (addClusterLabels) {
@@ -252,7 +253,7 @@ void ClusterFactory<InputType>::evalLocalPosition(gsl::span<const int> inputsInd
         clRmsXYZ[i] += (w * xyzi[i] * xyzi[i]);
       }
     } // w > 0
-  }   // dig loop
+  } // dig loop
 
   //  cout << " wtot " << wtot << endl;
 
