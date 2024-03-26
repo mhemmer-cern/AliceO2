@@ -253,7 +253,7 @@ void ClusterFactory<InputType>::evalLocalPosition(gsl::span<const int> inputsInd
         clRmsXYZ[i] += (w * xyzi[i] * xyzi[i]);
       }
     } // w > 0
-  } // dig loop
+  }   // dig loop
 
   //  cout << " wtot " << wtot << endl;
 
