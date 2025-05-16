@@ -270,7 +270,7 @@ Geometry* Geometry::GetInstanceFromRunNumber(Int_t runNumber, const std::string_
                    "<<EMCAL_COMPLETE12SMV1>>";
     }
     return Geometry::GetInstance("EMCAL_COMPLETE12SMV1", mcname, mctitle);
-  } else // Run 2 
+  } else // Run 2
   {
     // EMCAL + DCAL geometry, 20 SM. Year 2015 and on
 
