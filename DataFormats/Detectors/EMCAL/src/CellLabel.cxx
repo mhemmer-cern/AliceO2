@@ -15,11 +15,12 @@
 #include "fairlogger/Logger.h"
 #include <cstddef>
 #include <cstdint>
+#include <vector>
 #include <gsl/span>
 
 using namespace o2::emcal;
 
-CellLabel::CellLabel(const gsl::span<const int> labels, const gsl::span<const float> amplitudeFractions) : mLabels(labels), mAmplitudeFraction(amplitudeFractions)
+CellLabel::CellLabel(std::vector<int> labels, std::vector<float> amplitudeFractions) : mLabels(labels), mAmplitudeFraction(amplitudeFractions)
 {
   if (labels.size() != amplitudeFractions.size()) {
     LOG(error) << "Size of labels " << labels.size() << " does not match size of amplitude fraction " << amplitudeFractions.size() << " !";
