@@ -17,6 +17,8 @@
 #include <cstdint>
 #include <vector>
 #include <gsl/span>
+#include <vector>
+#include <utility>
 
 using namespace o2::emcal;
 

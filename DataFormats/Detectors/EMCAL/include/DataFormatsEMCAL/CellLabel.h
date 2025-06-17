@@ -35,7 +35,12 @@ class CellLabel
  public:
   // CellLabel() = default;
 
-  /// \brief Constructor
+  /// \brief Constructor using std::vector by moving NOT copying
+  /// \param labels list of mc labels
+  /// \param amplitudeFractions list of amplitude fractions
+  CellLabel(std::vector<int> labels, std::vector<float> amplitudeFractions);
+
+  /// \brief Constructor using gsl::span
   /// \param labels list of mc labels
   /// \param amplitudeFractions list of amplitude fractions
   CellLabel(std::vector<int> labels, std::vector<float> amplitudeFractions);
