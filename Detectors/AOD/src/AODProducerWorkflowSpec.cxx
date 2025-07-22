@@ -2895,7 +2895,7 @@ void AODProducerWorkflowDPL::extrapolateToCalorimeters(TrackExtraInfo& extraInfo
   // check if we are in a good eta range
   float r = std::sqrt(outTr.getX() * outTr.getX() + outTr.getY() * outTr.getY()), tg = std::atan2(r, outTr.getZ());
   float eta = -std::log(std::tan(0.5f * tg)), etaAbs = std::abs(eta);
-  float pProp = outTr.getP();
+  float pProp = outTr.getP()/outTr.getAbsCharge();
   if (etaAbs > ETAEMCAL) {
     LOGP(debug, "eta = {} is off at EMCAL radius", eta, outTr.asString());
     return;
@@ -2924,7 +2924,7 @@ void AODProducerWorkflowDPL::extrapolateToCalorimeters(TrackExtraInfo& extraInfo
   // check if we are in a good eta range
   r = std::sqrt(outTr.getX() * outTr.getX() + outTr.getY() * outTr.getY()), tg = std::atan2(r, outTr.getZ());
   eta = -std::log(std::tan(0.5f * tg)), etaAbs = std::abs(eta);
-  pProp = outTr.getP();
+  pProp = outTr.getP()/outTr.getAbsCharge();
   if (etaAbs > ETAEMCAL) {
     LOGP(debug, "eta = {} is off at EMCAL radius", eta, outTr.asString());
     return;
