@@ -407,6 +407,10 @@ class AODProducerWorkflowDPL : public Task
     float tofExpMom = -999.f;
     float trackEtaEMCAL = -999.f;
     float trackPhiEMCAL = -999.f;
+    float trackPEMCAL = -999.f;
+    float trackEtaEMCAL2 = -999.f;
+    float trackPhiEMCAL2 = -999.f;
+    float trackPEMCAL2 = -999.f;
     float trackTime = -999.f;
     float trackTimeRes = -999.f;
     int diffBCRef = 0; // offset of time reference BC from the start of the orbit

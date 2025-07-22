@@ -354,6 +354,10 @@ void AODProducerWorkflowDPL::addToTracksExtraTable(TracksExtraCursorType& tracks
                     truncateFloatFraction(extraInfoHolder.tofExpMom, mTrack1Pt),
                     truncateFloatFraction(extraInfoHolder.trackEtaEMCAL, mTrackPosEMCAL),
                     truncateFloatFraction(extraInfoHolder.trackPhiEMCAL, mTrackPosEMCAL),
+                    truncateFloatFraction(extraInfoHolder.trackPEMCAL, mTrackPosEMCAL),
+                    truncateFloatFraction(extraInfoHolder.trackEtaEMCAL2, mTrackPosEMCAL),
+                    truncateFloatFraction(extraInfoHolder.trackPhiEMCAL2, mTrackPosEMCAL),
+                    truncateFloatFraction(extraInfoHolder.trackPEMCAL2, mTrackPosEMCAL),
                     truncateFloatFraction(extraInfoHolder.trackTime, mTrackTime),
                     trackTimeRes);
 }
@@ -1126,7 +1130,7 @@ void AODProducerWorkflowDPL::fillMCTrackLabelsTable(MCTrackLabelCursorType& mcTr
           if (!needToStore(mGIDToTableID)) {
             continue;
           }
-          if (mcTruth.isValid()) { // if not set, -1 will be stored
+          if (mcTruth.isValid()) {                                                                               // if not set, -1 will be stored
             labelHolder.labelID = (mToStore[mcTruth.getSourceID()][mcTruth.getEventID()])[mcTruth.getTrackID()]; // defined by TPC if it contributes, otherwise: by ITS
             if (mcTruth.isFake()) {
               labelHolder.labelMask |= (0x1 << 15);
@@ -2817,6 +2821,7 @@ bool AODProducerWorkflowDPL::propagateTrackToPV(o2::track::TrackParametrizationW
 void AODProducerWorkflowDPL::extrapolateToCalorimeters(TrackExtraInfo& extraInfoHolder, const o2::track::TrackPar& track)
 {
   constexpr float XEMCAL = 440.f, XPHOS = 460.f, XEMCAL2 = XEMCAL * XEMCAL;
+  constexpr float XEMCALSMALLER = 430.f, XEMCALSMALLER2 = XEMCALSMALLER * XEMCALSMALLER;
   constexpr float ETAEMCAL = 0.75;                                  // eta of EMCAL/DCAL with margin
   constexpr float ZEMCALFastCheck = 460.;                           // Max Z (with margin to check with straightline extrapolarion)
   constexpr float ETADCALINNER = 0.22;                              // eta of the DCAL PHOS Hole (at XEMCAL)
@@ -2890,6 +2895,7 @@ void AODProducerWorkflowDPL::extrapolateToCalorimeters(TrackExtraInfo& extraInfo
   // check if we are in a good eta range
   float r = std::sqrt(outTr.getX() * outTr.getX() + outTr.getY() * outTr.getY()), tg = std::atan2(r, outTr.getZ());
   float eta = -std::log(std::tan(0.5f * tg)), etaAbs = std::abs(eta);
+  float pProp = outTr.getP();
   if (etaAbs > ETAEMCAL) {
     LOGP(debug, "eta = {} is off at EMCAL radius", eta, outTr.asString());
     return;
@@ -2907,8 +2913,36 @@ void AODProducerWorkflowDPL::extrapolateToCalorimeters(TrackExtraInfo& extraInfo
   }
   extraInfoHolder.trackPhiEMCAL = outTr.getPhiPos();
   extraInfoHolder.trackEtaEMCAL = eta;
+  extraInfoHolder.trackPEMCAL = pProp;
   LOGP(debug, "eta = {} phi = {} sector {} for {}", extraInfoHolder.trackEtaEMCAL, extraInfoHolder.trackPhiEMCAL, sector, outTr.asString());
   //
+
+  // we are at the EMCAL X, check if we are in the good sector
+  if (!propExactSector(XEMCALSMALLER) || SECTORTYPE[sector] == SNONE) { // propagation failed or neither EMCAL not DCAL/PHOS
+    return;
+  }
+  // check if we are in a good eta range
+  r = std::sqrt(outTr.getX() * outTr.getX() + outTr.getY() * outTr.getY()), tg = std::atan2(r, outTr.getZ());
+  eta = -std::log(std::tan(0.5f * tg)), etaAbs = std::abs(eta);
+  pProp = outTr.getP();
+  if (etaAbs > ETAEMCAL) {
+    LOGP(debug, "eta = {} is off at EMCAL radius", eta, outTr.asString());
+    return;
+  }
+  // are we in the PHOS hole (with margin)?
+  if ((SECTORTYPE[sector] & SPHOS) && etaAbs < ETADCALPHOSSWITCH) { // propagate to PHOS radius
+    if (!propExactSector(XPHOS)) {
+      return;
+    }
+    r = std::sqrt(outTr.getX() * outTr.getX() + outTr.getY() * outTr.getY());
+    tg = std::atan2(r, outTr.getZ());
+    eta = -std::log(std::tan(0.5f * tg));
+  } else if (!(SECTORTYPE[sector] & SEMCAL)) { // are in the sector with PHOS only
+    return;
+  }
+  extraInfoHolder.trackPhiEMCAL2 = outTr.getPhiPos();
+  extraInfoHolder.trackEtaEMCAL2 = eta;
+  extraInfoHolder.trackPEMCAL2 = pProp;
 }
 
 std::set<uint64_t> AODProducerWorkflowDPL::filterEMCALIncomplete(const gsl::span<const o2::emcal::TriggerRecord> triggers)

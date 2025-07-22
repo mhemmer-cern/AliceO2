@@ -253,8 +253,12 @@ DECLARE_SOA_COLUMN(TPCSignal, tpcSignal, float);                                
 DECLARE_SOA_COLUMN(TRDSignal, trdSignal, float);                                              //! PID signal in the TRD
 DECLARE_SOA_COLUMN(Length, length, float);                                                    //! Track length
 DECLARE_SOA_COLUMN(TOFExpMom, tofExpMom, float);                                              //! TOF expected momentum obtained in tracking, used to compute the expected times
-DECLARE_SOA_COLUMN(TrackEtaEMCAL, trackEtaEmcal, float);                                      //!
-DECLARE_SOA_COLUMN(TrackPhiEMCAL, trackPhiEmcal, float);                                      //!
+DECLARE_SOA_COLUMN(TrackEtaEMCAL, trackEtaEmcal, float);                                      //! Eta of track on EMCAL/PHOS surface + 10 cm
+DECLARE_SOA_COLUMN(TrackPhiEMCAL, trackPhiEmcal, float);                                      //! Phi of track on EMCAL/PHOS surface + 10 cm
+DECLARE_SOA_COLUMN(TrackPEMCAL, trackPEmcal, float);                                          //! Momentum of track on EMCAL/PHOS surface + 10 cm
+DECLARE_SOA_COLUMN(TrackEtaEMCAL2, trackEtaEmcal2, float);                                    //! Eta of track on EMCAL/PHOS surface
+DECLARE_SOA_COLUMN(TrackPhiEMCAL2, trackPhiEmcal2, float);                                    //! Phi of track on EMCAL/PHOS surface
+DECLARE_SOA_COLUMN(TrackPEMCAL2, trackPEmcal2, float);                                        //! Momentum of track on EMCAL/PHOS surface
 DECLARE_SOA_COLUMN(TrackTime, trackTime, float);                                              //! Estimated time of the track in ns wrt collision().bc() or ambiguoustrack.bcSlice()[0]
 DECLARE_SOA_COLUMN(TrackTimeRes, trackTimeRes, float);                                        //! Resolution of the track time in ns (see TrackFlags::TrackTimeResIsRange)
 
@@ -638,7 +642,9 @@ DECLARE_SOA_TABLE_FULL_VERSIONED(StoredTracksExtra_002, "TracksExtra", "AOD", "T
                                  track::TPCCrossedRowsOverFindableCls<track::TPCNClsFindable, track::TPCNClsFindableMinusCrossedRows>,
                                  track::TPCFoundOverFindableCls<track::TPCNClsFindable, track::TPCNClsFindableMinusFound>,
                                  track::TPCFractionSharedCls<track::TPCNClsShared, track::TPCNClsFindable, track::TPCNClsFindableMinusFound>,
-                                 track::TrackEtaEMCAL, track::TrackPhiEMCAL, track::TrackTime, track::TrackTimeRes);
+                                 track::TrackEtaEMCAL, track::TrackPhiEMCAL, track::TrackPEMCAL,
+                                 track::TrackEtaEMCAL2, track::TrackPhiEMCAL2, track::TrackPEMCAL2,
+                                 track::TrackTime, track::TrackTimeRes);
 
 DECLARE_SOA_EXTENDED_TABLE(TracksExtra_000, StoredTracksExtra_000, "EXTRACKEXTRA", 0, //! Additional track information (clusters, PID, etc.)
                            track::DetectorMap);
