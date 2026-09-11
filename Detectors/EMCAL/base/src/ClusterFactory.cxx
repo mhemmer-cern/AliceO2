@@ -213,7 +213,6 @@ void ClusterFactory<InputType>::evalDispersion(std::span<const int> inputsIndice
   clusterAnalysis.setDispersion(std::sqrt(d));
 }
 
-
 ///
 /// Calculates the center of gravity in the local EMCAL-module coordinates
 //____________________________________________________________________________
